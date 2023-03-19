@@ -1,0 +1,118 @@
+/* bodY {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+#search,
+#categories,
+#area,
+#ingredients,
+#contact-us,
+#more-detailes {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+section {
+  transition: all 0.5s;
+}
+#openning {
+  position: fixed;
+  text-align: center;
+  max-width: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: white;
+}
+.meal-card {
+  overflow: hidden;
+}
+
+.img-caption {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meal-card:hover .img-caption {
+  top: 0;
+}
+
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 18px;
+  max-height: calc(4 * 18) px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+#contact-us p {
+  display: none;
+}

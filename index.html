@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yummy</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/aos.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="loading vh-100">
+            <div class="center h-100">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+        <nav class="navBar bg-dark position-fixed d-flex h-100 z-2">
+            <div class=" fs-3 mx-5">
+                <ul class=" list-unstyled p-3">
+                    <li data-aos="zoom-out-up">
+                        <span class=" text-decoration-none cursor-pointer
+                            text-white fs-6" id="navSearch">Search</span>
+                    </li>
+                    <li data-aos="zoom-out-up">
+                        <span class=" text-decoration-none cursor-pointer
+                            text-white fs-6" id="nav-categories">Categories</span>
+                    </li>
+                    <li data-aos="zoom-out-up">
+                        <span id="navArea" class=" text-decoration-none
+                            cursor-pointer
+                            text-white
+                            fs-6">Area</span>
+                    </li>
+                    <li data-aos="zoom-out-up">
+                        <span id="navIngredients" class=" text-decoration-none
+                            cursor-pointer
+                            text-white fs-6">Ingredients</span>
+                    </li>
+                    <li data-aos="zoom-out-up">
+                        <span class="fs-6 text-decoration-none cursor-pointer
+                            text-white" id="navContact-us">Contact Us</span>
+                    </li>
+                </ul>
+                <div class="navBar-footer bottom-0 position-absolute w-100
+                    start-0">
+                    <ul class=" list-unstyled d-flex text-white-50">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook m-2 text-white
+                                    fs-4"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-twitter m-2 text-white
+                                    fs-4"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-github m-2 text-white
+                                    fs-4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class=" text-white-50 fs-6">
+                        Copyright Â© 2019 All Rights
+                        Reserved.
+                    </p>
+                </div>
+            </div>
+            <div class=" position-relative">
+                <div id="openning">
+                    <div>
+                        <img src="./images/logo (1).png" class="w-100" alt="">
+                    </div>
+                    <div id="open" class="fs-1 cursor-pointer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-globe d-block"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="main-page">
+            <div class="container p-5">
+                <div class="row" id="display-data">
+                    <div class="col-md-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="search" class="bg-dark vh-100 p-5">
+            <div class="container w-75">
+                <div class="row ms-auto mb-5">
+                    <div class="col-md-6">
+                        <input type="text" class=" form-control"
+                            placeholder="SEARCH BY NAME........"
+                            id="search-by-name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class=" form-control"
+                            placeholder="SEARCH BY FIREST LATTER........"
+                            maxlength="1"
+                            id="search-by-letter">
+                    </div>
+
+                </div>
+                <div class="row" id="display-search-data">
+
+                </div>
+            </div>
+        </section>
+        <section id="categories">
+            <div class="container p-5">
+                <div class="row" id="display-categories-data">
+
+                </div>
+            </div>
+        </section>
+        <section id="area">
+            <div class="container p-5">
+                <div class="row" id="display-area-data">
+                    <h1>Main area</h1>
+
+                </div>
+            </div>
+        </section>
+        <section id="ingredients">
+            <div class="container p-5">
+                <div class="row" id="display-ingredients-data">
+                    <h1>Main ingredients</h1>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact-us" class=" bg-dark text-center
+            justify-content-center
+            align-items-center w-100 vh-100">
+            <form class="w-75">
+                <div class="container p-5">
+                    <div class="row" id="display-contact-us-data">
+                        <div class="col-md-6 mb-4">
+                            <input type="text" name="userName" id="userName"
+                                placeholder="Enter Your Name..." class="
+                                form-control">
+                            <p class=" text-danger" id="userReg">INVALID INPUT,
+                                min char 4, max char 12, only alphabet</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <input type="email" name="userEmail" id="userEmail"
+                                placeholder="Enter Your Email..." class="
+                                form-control">
+                            <p class=" text-danger" id="emailReg">INVALID
+                                INPUT,for example ###@###.com</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <input type="tel" name="userPhone" id="userPhone"
+                                placeholder="Enter Your Phone Number..." class="
+                                form-control">
+                            <p class=" text-danger" id="phoneReg">Enter valid
+                                Phone Number</p>
+
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <input type="number" name="userAge" id="userAge"
+                                placeholder="Enter Your Age..." class="
+                                form-control">
+                            <p class=" text-danger" id="ageReg">Invalid user Age</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <input type="password" name="userPassword"
+                                id="userPassword"
+                                placeholder="Enter Your Password..." class="
+                                form-control">
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <input type="password" name="userRePassword"
+                                id="userRePassword"
+                                placeholder="Re Enter Your Password..." class="
+                                form-control">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-danger d-flex
+                        disabled
+                        mx-auto" id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="more-detailes" class=" vh-100 bg-black p-5 text-white-50
+            bg-opacity-75">
+            <div class="container">
+                <div class="row" id="meal-detailes">
+                    <!-- <div class="col-md-4">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <h1>Name</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Title</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatem aliquam eaque vitae explicabo
+                            praesentium placeat veritatis quisquam nemo
+                            molestiae quo nesciunt, hic cum repellat deserunt
+                            saepe aperiam veniam quod maiores suscipit.
+                            Veritatis esse voluptates est exercitationem sit
+                            ducimus labore quos ullam atque quae sint dicta, at
+                            quisquam laborum expedita a eos voluptatibus ex
+                            dolorum alias delectus. Illo ex tempora excepturi
+                            minima facere saepe odio laboriosam architecto quo.
+                            Aliquam assumenda facere sequi vel, porro architecto
+                            aspernatur, distinctio ipsam ea quae eum repellat
+                            tempore similique non exercitationem inventore
+                            laboriosam possimus earum expedita iste consequatur
+                            eveniet fugit nulla ipsum? Incidunt libero esse
+                            magni?</p>
+                        <ul class=" list-unstyled">
+                            <li><h3>Area :</h3></li>
+                            <li><h3>Category :</h3></li>
+                            <li class="mb-3"><h3>Recipes :</h3>
+                                <span class=" bg-info bg-opacity-25 py-1 px-3
+                                    rounded-3">kkk</span>
+                            </li>
+                            <li class=" mb-4"><h3>Tags :</h3>
+                                <span class=" bg-danger bg-opacity-25 py-1 px-3
+                                    rounded-3">kkk</span>
+
+                            </li>
+                            <a href="" target="_blank" class="btn btn-success">Source</a>
+                            <a href="" target="_blank" class="btn btn-danger">Youtube</a>
+                        </ul>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+        <script src="./js/aos.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery-3.6.3.min.js"></script>
+        <script src="./js/aos.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
